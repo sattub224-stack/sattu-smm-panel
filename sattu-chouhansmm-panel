@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SATTU SMM PANEL</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#0b1020;color:#f5f7ff;font:16px system-ui,sans-serif}.wrap{max-width:720px;margin:auto;padding:20px}.hero,.card{text-align:center;padding:22px 16px;margin:14px 0;border:1px solid #293451;border-radius:18px;background:#141b30}h1{font-size:30px;margin:10px 0}h2{font-size:20px}p{color:#b8c2dd}.services{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.service{padding:12px 5px;background:#0e1528;border-radius:12px;font-size:13px}button{width:100%;padding:14px;border:0;border-radius:12px;margin-top:12px;background:linear-gradient(90deg,#22d3ee,#a78bfa);font-size:16px;font-weight:bold;color:#07111c}input,select,textarea{width:100%;padding:12px;border:1px solid #35415f;border-radius:10px;background:#0e1528;color:white;font:inherit}label{display:block;text-align:left;margin:12px 0 6px}.hidden{display:none!important}.hint{font-size:12px;text-align:left;line-height:1.5}@media(max-width:420px){.services{grid-template-columns:1fr}}
+</style></head><body><main class="wrap">
+<header class="hero"><div style="font-size:26px">ЁЯСС</div><h1>SATTU SMM PANEL</h1><p>Welcome to your own SMM Panel</p></header>
+<section class="card" id="home"><h2>рд╣рдорд╛рд░реА рд╕рд░реНрд╡рд┐рд╕</h2><div class="services"><div class="service">ЁЯУ╕<br>Instagram Marketing</div><div class="service">тЦ╢я╕П<br>YouTube Marketing</div><div class="service">f<br>Facebook Marketing</div></div><button id="start" type="button">рд╢реБрд░реВ рдХрд░реЗрдВ</button></section>
+<section class="card hidden" id="orders"><h2>рдСрд░реНрдбрд░ рд░рд┐рдХреНрд╡реЗрд╕реНрдЯ</h2><form id="form">
+<label for="name">рдЖрдкрдХрд╛ рдирд╛рдо</label><input id="name" required maxlength="80" placeholder="рдЕрдкрдирд╛ рдирд╛рдо">
+<label for="platform">рдкреНрд▓реЗрдЯрдлреЙрд░реНрдо</label><select id="platform" required><option value="">рдЪреБрдиреЗрдВ</option><option>Instagram</option><option>YouTube</option><option>Facebook</option><option>рдЕрдиреНрдп</option></select>
+<label for="service">рд╕рд░реНрд╡рд┐рд╕</label><select id="service" required><option value="">рдЪреБрдиреЗрдВ</option><option>Followers</option><option>Likes</option><option>Views</option><option>Subscribers</option><option>рдЕрдиреНрдп</option></select>
+<label for="link">рдкреЛрд╕реНрдЯ / рдкреНрд░реЛрдлрд╛рдЗрд▓ / рдЪреИрдирд▓ рд▓рд┐рдВрдХ</label><input id="link" type="url" required placeholder="https://...">
+<label for="qty">рдорд╛рддреНрд░рд╛</label><input id="qty" type="number" min="1" required placeholder="100">
+<label for="details">рдЕрддрд┐рд░рд┐рдХреНрдд рдЬрд╛рдирдХрд╛рд░реА (рд╡реИрдХрд▓реНрдкрд┐рдХ)</label><textarea id="details" rows="3"></textarea>
+<p class="hint">рдЕрдкрдирд╛ Instagram/YouTube рдкрд╛рд╕рд╡рд░реНрдб рдХрднреА рди рджреЗрдВред WhatsApp рдЦреБрд▓реЗрдЧрд╛; рд╕рдВрджреЗрд╢ рднреЗрдЬрдиреЗ рдХреЗ рд▓рд┐рдП рдЖрдкрдХреЛ Send рджрдмрд╛рдирд╛ рд╣реЛрдЧрд╛ред</p>
+<button type="submit">WhatsApp рдкрд░ рдСрд░реНрдбрд░ рднреЗрдЬреЗрдВ</button><button type="button" id="back" style="background:#293451;color:white">рд╡рд╛рдкрд╕ рдЬрд╛рдПрдБ</button>
+</form></section>
+<section class="card"><p class="hint">рдпрд╣ рд╢реБрд░реБрдЖрддреА рдСрд░реНрдбрд░ рд░рд┐рдХреНрд╡реЗрд╕реНрдЯ рдкреЗрдЬ рд╣реИред рдпрд╣ рдЕрдкрдиреЗ-рдЖрдк рднреБрдЧрддрд╛рди рдирд╣реАрдВ рд▓реЗрддрд╛, рдСрд░реНрдбрд░ рд╕реЗрд╡ рдирд╣реАрдВ рдХрд░рддрд╛ рдФрд░ рд╕рд░реНрд╡рд┐рд╕ рдбрд┐рд▓реАрд╡рд░реА рдХреА рдЧрд╛рд░рдВрдЯреА рдирд╣реАрдВ рджреЗрддрд╛ред рдХреАрдордд рдФрд░ рдЙрдкрд▓рдмреНрдзрддрд╛ рдкрд╣рд▓реЗ рдкреБрд╖реНрдЯрд┐ рдХрд░реЗрдВред</p></section>
+</main><script>
+const home=document.getElementById('home'),orders=document.getElementById('orders');
+document.getElementById('start').addEventListener('click',()=>{home.classList.add('hidden');orders.classList.remove('hidden');orders.scrollIntoView({behavior:'smooth'});});
+document.getElementById('back').addEventListener('click',()=>{orders.classList.add('hidden');home.classList.remove('hidden');home.scrollIntoView({behavior:'smooth'});});
+document.getElementById('form').addEventListener('submit',e=>{e.preventDefault();const v=id=>document.getElementById(id).value.trim();const msg=['рдирдорд╕реНрддреЗ Sattu SMM Panel, рдореБрдЭреЗ рдСрд░реНрдбрд░ рдХреА рдЬрд╛рдирдХрд╛рд░реА рдЪрд╛рд╣рд┐рдПред','рдирд╛рдо: '+v('name'),'рдкреНрд▓реЗрдЯрдлреЙрд░реНрдо: '+v('platform'),'рд╕рд░реНрд╡рд┐рд╕: '+v('service'),'рд▓рд┐рдВрдХ: '+v('link'),'рдорд╛рддреНрд░рд╛: '+v('qty'),'рдЬрд╛рдирдХрд╛рд░реА: '+(v('details')||'рдирд╣реАрдВ')].join('\n');location.href='https://wa.me/918770651972?text='+encodeURIComponent(msg);});
+</script></body></html>
